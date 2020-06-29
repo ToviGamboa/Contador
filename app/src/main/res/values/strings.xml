@@ -4,4 +4,7 @@
     <string name="text_btn_sumar">Sumar</string>
     <string name="text_btn_limpiar">Limpiar</string>
     <string name="text_btn_restar">Restar</string>
+
+    <!-- Todo: descripciones -->
+    <string name="text_desc_logo">imagen logo Tovi Gamboa</string>
 </resources>

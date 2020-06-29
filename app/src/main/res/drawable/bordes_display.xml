@@ -3,14 +3,14 @@
     <solid android:color="#CCEAE0E0"/>
 
     <stroke android:width="2dp"
-        android:color="#6B6B6B"/>
+        android:color="#5A5050"/>
 
-    <padding android:top="8dp"
+    <padding android:top="1dp"
         android:left="1dp"
         android:right="1dp"
-        android:bottom="8dp"/>
+        android:bottom="1dp"/>
 
     <corners android:topLeftRadius="15dp"
-        android:topRightRadius="15dp"/>
+        android:bottomRightRadius="15dp"/>
 
 </shape>
