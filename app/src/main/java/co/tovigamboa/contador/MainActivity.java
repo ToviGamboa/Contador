@@ -3,6 +3,7 @@ package co.tovigamboa.contador;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,7 +31,11 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	private void sumar() {
-		contador++;
-		tvDisplay.setText(String.valueOf(contador));
+		if(contador >= 0){
+			contador++;
+			tvDisplay.setText(String.valueOf(contador));
+		}else{
+			Toast.makeText(getApplicationContext(),"Error.",Toast.LENGTH_SHORT).show();
+		}
 	}
 }
