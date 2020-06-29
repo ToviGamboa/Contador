@@ -2,26 +2,31 @@ package co.tovigamboa.contador;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
 	private TextView tvDisplay;
 	private int contador = 0;
+	private Button btnRestar;
 
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		btnRestar = findViewById(R.id.btRestarId);
+		btnRestar.setOnClickListener(this);
 		tvDisplay = findViewById(R.id.tvDisplayId);
 		tvDisplay.setText(String.valueOf(contador));
 	}
 
+	@Override
 	public void onClick(View view) {
 		switch (view.getId()){
 			case R.id.btSumarId:
