@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Contador</string>
+    <string name="text_display">0</string>
 </resources>
