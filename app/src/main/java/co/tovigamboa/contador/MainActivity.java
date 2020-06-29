@@ -26,6 +26,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 		tvDisplay.setText(String.valueOf(contador));
 	}
 
+	//todo: guarda el estado de la activity antes de salir de ella
+	@Override
+	protected void onSaveInstanceState(Bundle outState){
+		super.onSaveInstanceState(outState);
+		outState.putInt("CONTADOR", contador);
+	}
+
+	//todo: recupera dicho estado al entra de nuevo en esta actividad
+	@Override
+	protected void onRestoreInstanceState(Bundle savedInstanceState){
+		super.onRestoreInstanceState(savedInstanceState);
+		contador = savedInstanceState.getInt("CONTADOR");
+		tvDisplay.setText(String.valueOf(contador));
+	}
+
 	@Override
 	public void onClick(View view) {
 		switch (view.getId()){
