@@ -57,4 +57,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btSumarId" />
 
+
+    <Button
+        android:id="@+id/btRestarId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/efecto_btn_restar"
+        android:drawableBottom="@drawable/ic_restar"
+        android:onClick="onClick"
+        android:text="@string/text_btn_restar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#6B6B6B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLimpiarId" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,4 +3,5 @@
     <string name="text_display">0</string>
     <string name="text_btn_sumar">Sumar</string>
     <string name="text_btn_limpiar">Limpiar</string>
+    <string name="text_btn_restar">Restar</string>
 </resources>

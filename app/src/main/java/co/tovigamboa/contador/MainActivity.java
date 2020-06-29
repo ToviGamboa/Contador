@@ -30,7 +30,19 @@ public class MainActivity extends AppCompatActivity {
 			case R.id.btLimpiarId:
 				limpiar();
 				break;
+			case R.id.btRestarId:
+				restar();
+				break;
 
+		}
+	}
+
+	private void restar() {
+		if(contador == 0){
+			Toast.makeText(getApplicationContext(),"Debes sumar primero",Toast.LENGTH_SHORT).show();
+		}else{
+			contador--;
+			tvDisplay.setText(String.valueOf(contador));
 		}
 	}
 
