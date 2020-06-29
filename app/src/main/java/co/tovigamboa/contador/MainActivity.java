@@ -27,7 +27,16 @@ public class MainActivity extends AppCompatActivity {
 			case R.id.btSumarId:
 				sumar();
 				break;
+			case R.id.btLimpiarId:
+				limpiar();
+				break;
+
 		}
+	}
+
+	private void limpiar() {
+		contador = 0;
+		tvDisplay.setText(String.valueOf(contador));
 	}
 
 	private void sumar() {

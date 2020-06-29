@@ -29,13 +29,32 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:drawableBottom="@drawable/ic_sumar"
         android:background="@drawable/efecto_btn_sumar"
+        android:drawableBottom="@drawable/ic_sumar"
+        android:onClick="onClick"
         android:text="@string/text_btn_sumar"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#6B6B6B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDisplayId"
-        android:onClick="onClick"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvDisplayId" />
+
+    <Button
+        android:id="@+id/btLimpiarId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/efecto_btn_limpiar"
+        android:drawableBottom="@drawable/ic_limpiar"
+        android:onClick="onClick"
+        android:text="@string/text_btn_limpiar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#6B6B6B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btSumarId" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
